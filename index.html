@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho / Perfil */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        /* Seções */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        /* Lista de Habilidades / Projetos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Links e Contatos */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Seu Nome Aqui</h1>
+            <p>Sua Profissão / Cargo ou Estudante de X</p>
+        </header>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Escreva um breve resumo sobre você, sua trajetória, suas paixões e o que você está buscando no momento. Seja autêntico e direto!</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="grid">
+                <div class="card">
+                    <strong>Hard Skills</strong>
+                    <p>HTML, CSS, JavaScript, Git</p>
+                </div>
+                <div class="card">
+                    <strong>Frameworks / Ferramentas</strong>
+                    <p>React, Node.js, VS Code</p>
+                </div>
+                <div class="card">
+                    <strong>Soft Skills</strong>
+                    <p>Comunicação, Trabalho em equipe</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <p>Aqui estão alguns dos projetos que mais me orgulho de ter desenvolvido:</p>
+            <div class="grid">
+                <div class="card">
+                    <strong>Projeto 1</strong>
+                    <p>Descrição rápida do que o projeto faz e tecnologias usadas.</p>
+                </div>
+                <div class="card">
+                    <strong>Projeto 2</strong>
+                    <p>Descrição rápida do que o projeto faz e tecnologias usadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos nos conectar?</h2>
+            <p>Sinta-se à vontade para entrar em contato comigo através das minhas redes sociais:</p>
+            <div class="links">
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/seu-usuario" target="_blank" class="btn">GitHub</a>
+                <a href="mailto:seu-email@email.com" class="btn">E-mail</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Seu Nome. Feito com ❤️ e HTML/CSS.</p>
